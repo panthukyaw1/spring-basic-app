@@ -53,6 +53,14 @@ public class InitialDataLoader implements ApplicationListener<ContextRefreshedEv
 		authorRepository.save(author3);
 		bookRepository.save(book3);
 		
+		Book book4 = new Book("Java MultiThreading","Programming",40.6);
+		book4.getAuthors().add(author1);
+		book4.getAuthors().add(author2);
+		book4.getAuthors().add(author3);
+		authorRepository.save(author1);
+		authorRepository.save(author2);
+		authorRepository.save(author3);
+		bookRepository.save(book4);
 		
 		
 		
